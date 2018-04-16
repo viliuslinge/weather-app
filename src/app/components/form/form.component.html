@@ -1,0 +1,28 @@
+<app-nav [data]="data"></app-nav>
+<div class="container">
+  <mat-form-field class="example-full-width">
+    <input matInput placeholder="Api Key" [(ngModel)]="apiKey">
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <input matInput placeholder="City" #city>
+  </mat-form-field>
+  <button
+    mat-raised-button
+    color="primary"
+    (click)="updateForm(city); showData()"
+  >
+    Add
+  </button>
+
+  <div class="hint">
+    <p>In case you dont have an api key:</p>
+    <p>b1e786faa1a034762e3047b01b4a4a5e</p>
+  </div>
+</div>
+
+
+
+
+
+
+

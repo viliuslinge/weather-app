@@ -1,0 +1,7 @@
+<div *ngIf="selectedTab" class="container">
+  <img src="http://openweathermap.org/img/w/{{ selectedTab.weather[0].icon }}.png" alt="">
+  <p><strong>City:</strong> {{ selectedTab.name }}</p>
+  <p><strong>Temperature:</strong> {{ selectedTab.main.temp }} °C</p>
+  <p><strong>Description:</strong> {{ selectedTab.weather[0].description }}</p>
+  <p><strong>Winds speed:</strong> {{ selectedTab.wind.speed }} m/s</p>
+</div>
